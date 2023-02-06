@@ -1,7 +1,6 @@
 import './index.css';
-import parents from './figure.jpg';
 
-export default function Main() {
+export default function Info() {
   return (
   <div className='info-section'>
     <h1>
@@ -9,7 +8,7 @@ export default function Main() {
         Do They Just Feel Obligated to Talk to You?
     </h1>
     <figure>
-        <img src={parents} alt='parents' className='main-img'></img>
+        <img src='https://snworksceo.imgix.net/dpn-utb/e6f44799-1365-49ec-930a-61c7c2522cc0.sized-1000x1000.jpg?w=1000' alt='parents' className='main-img'></img>
     </figure>
     <figcaption>
         <p>

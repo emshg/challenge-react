@@ -12,7 +12,7 @@ export default function Navbar() {
     <a href="/" style={{color:'white', 
     backgroundColor:'#466fb1',
     borderRadius:'4px',
-    padding: '0 1rem'}}>Newsletter</a>
+    padding: '0 1rem'}}>Newsletters</a>
     
   </div>
   );
