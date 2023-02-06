@@ -1,13 +1,255 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: Georgia,Times,serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 14px;
+  line-height: 1.428571429;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main {
+  width: 67%;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+  text-align: start;
+  /* margin: auto; */
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-title {
+  font-size: 60px;
+  color: #222;
+  justify-content: center;
+}
+
+.navbar-subtitle {
+  margin-top: -10px;
+  font-size: 16px;
+  color: #222;
+  vertical-align: middle;
+}
+
+.navbar-header{
+  margin-top: 15px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  font-family: "Quattrocento Sans","Helvetica","Arial","sans-serif";
+  width: 100%;
+}
+
+.navbar-links{
+  display: flex;
+  padding: 5px 0;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+  width: 100%;
+}
+
+.navbar-links a{
+  flex: 1;
+  text-align: center;
+  text-transform: uppercase;
+  color: #222;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.button-logo{
+  height:70px;
+}
+
+.info-section {
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+  text-align: start;
+}
+
+.info-section figure{
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.info-section img{
+  align-self: center;
+  max-width: 100%;
+  height: auto;
+}
+
+.info-section figcaption{
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+p{
+  margin: 0 0 10px;
+}
+
+.main-img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  overflow: clip;
+}
+
+.info-section h1{
+  font-size: 36px;
+  margin-top: 0;
+}
+
+.info-section .info{
+  margin-bottom: 20px;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.info-section .info .authors{
+  font-size: 20px;
+  color: #446cb3;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.info-section .info .author-name{
+  font-size: 20px;
+  color: #446cb3;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.info-section .info .publish-time{
+  margin: 0;
+  font-size: 12px;
+  color: #777;
+  text-transform: uppercase;
+}
+
+.quiz-section{
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+  text-align: start;
+  margin-bottom: 2em;
+  width: 100%;
+}
+.quiz-section h4{
+  font-weight: 700;
+  line-height: 1.1;
+  color: inherit;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 21px;
+  width: 100%;
+  pointer-events: none;
+}
+
+.quiz-unit{
+  color: #333;
+  font-size: 16px;
+  box-sizing: border-box;
+  border: 2px solid #F1F1F1;
+  border-radius: 6px;
+  background-color: #fff;
+  padding: 1em;
+  cursor: pointer;
+  width: 100%;
+  transition: 0.3s;
+  margin-top: 0.5em;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.quiz-unit-checked{
+  border-radius: 6px;
+  padding: 1em;
+  cursor: pointer;
+  width: 100%;
+  transition: 0.3s;
+  margin-top: 0.5em;
+  background-color: #456CB3;
+  color: #FFFFFF;
+  border: 2px solid;
+  text-align: start;
+}
+
+.quiz-checkbox{
+  color: inherit;
+  font: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 4px 1em 0 0;
+  line-height: normal;
+}
+
+.result-button{
+  width: 100%;
+  border: 4px solid #456CB3;
+  border-radius: 6px;
+  background-color: #456CB3;
+  color: white;
+  padding: 0.5rem 0;
+  margin-top: 1em;
+  cursor: pointer;
+}
+
+.unchecked{
+  border: 3px solid #d0d0d0;
+  background-color: #d0d0d0;
+  color: rgb(97, 97, 97);
+  cursor: auto;
+  pointer-events: none;
+}
+
+.result-text {
+  margin-top: 2em;
+  background: #EFF3FA;
+  border-radius: 6px;
+  padding: 2em;
+  font-size: 80%;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.result-text h3{
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.result-text p{
+  margin: 0 0 10px;
+  font-size:14px;
+}
+
+.disabled{
+  cursor:auto;
+  pointer-events: none;
+}
+
+@media (max-width: 490px){
+  .navbar img, .navbar-title, .navbar-subtitle {
+      display: none !important;
+  }
+  
+}
+
+@media (max-width: 1076px){
+  
 }
